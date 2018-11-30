@@ -1,0 +1,200 @@
+
+
+body{
+	background-color: white;
+}
+
+.textoceres{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 60px;
+}
+.ceres{
+    font-family: 'Monda', sans-serif;
+	font-size: 60px;
+}
+
+.navbar{
+	background-color: #071D49;
+	color: white;
+
+}
+nav.navbar ul.nav li a:hover{
+          background-color:rgb(234,118,0);
+
+}
+
+nav.navbar ul.nav li.active a,nav.navbar ul.nav li.active a:hover{
+        background-color:rgb(234,118,0);
+        
+ }
+
+
+#imaginary_container{
+    margin-top:20%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+	padding: 10px;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+#login{
+	padding: 20px;
+}
+
+
+
+.academicosinicio{
+    color: black;
+}
+
+.academicosinicio:hover{
+    color:darkorange;
+    text-shadow: (1px,2px, black);
+}
+
+/*academicos inicio*/
+
+/*Perfil*/
+body {background:#f2f2f2;}
+
+
+.site-title {margin-top: 80px;margin-bottom: 20px; font-weight: 300;}
+.panel {
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+
+/*--------------------------------------
+ Sets the actionable area for the gaadiexp
+ including a label for usability
+--------------------------------------*/
+.content-box {margin-top:20px;}
+.gaadiexp,
+.gaadiexp:after,
+.gaadiexp *,
+.gaadiexp *:before,
+.gaadiexp *:after,
+.header-nav *,
+.header-nav *:before,
+.header-nav *:after {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gaadiexp {
+    cursor: pointer;
+    height: 60px;
+    margin-bottom: 0;
+    width: 60px;
+    z-index: 9001;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: #dd0000;
+}
+
+.gaadiexp:after {
+    bottom: 7px;
+    color: #FFFFFF;
+    content: 'Menu';
+    font-size: 13px;
+    font-weight: 300;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*--------------------------------------
+ Creates the look of the gaadiexp icon
+ using the inner span and pseudo-elements
+--------------------------------------*/
+
+.gaadiexp span,
+.gaadiexp span:before,
+.gaadiexp span:after {
+    background: #FFFFFF;
+    border-radius: 0.2em;
+    height: 4px;
+    left: 10px;
+    position: absolute;
+    top: 22px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 40px;
+}
+
+
+/* Reset the left and create the pseudo-element */
+
+.gaadiexp span:before,
+.gaadiexp span:after {
+    content: '';
+    left: 0;
+}
+
+
+/* Top bar position */
+
+.gaadiexp span:before {
+    top: -8px;
+}
+
+
+/* Bottom bar position */
+
+.gaadiexp span:after {
+    top: 8px;
+}
+
+
+/* Get rid of more on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp:after {
+    content: '';
+}
+
+
+/* Get rid of the middle bar on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span {
+    height: 0;
+    width: 0;
+}
+
+
+/* Moves the top and bottom bars to the middle on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span:before,
+.gaadiexp-check:checked + .gaadiexp span:after {
+    top: 6px;
+}
+
+
+/* Rotates the top bar on action with full browser support (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span:before {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+
+
+
+/*perfil*/

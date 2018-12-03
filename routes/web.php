@@ -17,6 +17,14 @@
 Route::get('/', function () {
     return view('inicio');
 });
+Route::get('/perfil', function () {
+    return view('perfilPublico');
+});
+
+//mientras, asi, para probarlo
+Route::get('/perfiluser', function () {
+    return view('perfilUsuario');
+});
 
 Auth::routes();
 

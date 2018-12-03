@@ -79,7 +79,7 @@
         </div>
     </div>
                 <div class="col-xs-7 col-sm-4 col-md-6">
-                    <div class="profile-block" >
+                    <div class="profile-block" ng-show="mostrarPerfil">
 
                       <h2>Ph.D. Gonzalo Acuña Leiva</h2>
                       <h4>gonzalo.acuna@usach.cl</h4>
@@ -95,10 +95,58 @@
                     </ul>
 
                     </div>
-                </div>
+
+
+
+          <!-- Edicion de datos personales -->
+                    <div class="profile-block" ng-show="mostrarBoxEditar" >
+                      <form>
+                      <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        
+                      </div>
+                     
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@usach.cl">
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="nombre">Grado académico</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        
+                      </div>
+                       <div class="form-group">
+                        <label for="nombre">Año de obtención de grado académico</label>
+                        <?php
+                              echo "<select name='ano'>";
+                                  for($i=date("Y");$i>=1900;$i--)
+                                  {
+                                      echo "<option value='".$i."'>".$i."</option>";
+                                  }
+                              echo "</select>";
+                         ?>
+                        
+                      </div>
+
+                    
+                     
+                    
+                      <button type="submit" class="btn btn-primary" ng-click="editarPerfil()">Guardar</button>
+                    </form>
+                           
+    
+                    </div>
+
+                    </div>
+
+              
+
                  <div class="col-xs-1  col-md-1">
                    <button type="button" class="btn btn-primary" ng-click="editarPerfil()"><i class="fas fa-wrench"></i> Editar</button>
-                   <h3 ng-show="mostrarBoxEditar">se habilita la edicion*</h3>
+
                  </div>
           
                 </div>
@@ -231,7 +279,7 @@
             </div>
            
         </div>
-    </div>
+</div>
 
 
 

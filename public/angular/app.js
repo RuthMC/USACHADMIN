@@ -6,10 +6,12 @@ var app = angular.module('docentesDiinf', [], function($interpolateProvider) {
 
 app.controller('docentesCtrl',function($scope){
 		$scope.mostrar=false; //mostrar algo en el front
+		$scope.mostrarPerfil=!false;
 		$scope.mostrarBoxEditar=false;
 		$scope.mostrarPub=true; //por defecto se muestran si o si las publicaciones al inicio
 		$scope.mostrarGrado=false;
 		$scope.mostrarProy=false;
+		
 		//$scope.mostrarGraf=false;
 		$scope.activoPub="active";
 		$scope.activoGrado="";
@@ -74,8 +76,11 @@ app.controller('docentesCtrl',function($scope){
 		$scope.editarPerfil=function(){
 			if($scope.mostrarBoxEditar==false){
 				$scope.mostrarBoxEditar=true;
+				$scope.mostrarPerfil=false;
+				
 			}else{
 				$scope.mostrarBoxEditar=false;
+				$scope.mostrarPerfil=true;
 			}
 		}
 

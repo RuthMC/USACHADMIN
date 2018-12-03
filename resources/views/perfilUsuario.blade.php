@@ -45,7 +45,7 @@
       
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a  href="{{ route('social.oauth', 'google') }}"><span class="glyphicon glyphicon-log-in" aria-hidden='true'></span> Iniciar Sesión</a></li>
+        <li><a  href="{{ route('social.oauth', 'google') }}"><span class="glyphicon glyphicon-log-in" aria-hidden='true'></span> Cerrar Sesión</a></li>
         
       </ul>
        </div>

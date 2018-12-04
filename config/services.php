@@ -48,9 +48,9 @@ return [
     ],
 
      'google' => [
-        'client_id'     => '16577149202-49pl7hrlqcq6st999m9947v650n91qje.apps.googleusercontent.com',
-        'client_secret' => 'bueuHNroJode32k8AlHq8R1d',
-        'redirect'      => 'http://ceresusach.herokuapp.com/oauth/google/callback',
+        'client_id'     => '708940633345-o5pa4s2g3k9mlalllpba7vnfschctl0f.apps.googleusercontent.com',
+        'client_secret' => 'p_cYvCK7W9jdDS6poRCJngbE',
+        'redirect'      => 'https://ceresusach.herokuapp.com/oauth/google/callback',
     ],
 
 
